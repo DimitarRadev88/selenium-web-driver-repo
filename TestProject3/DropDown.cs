@@ -10,11 +10,14 @@ namespace TestProject3
     [TestFixture]
     public class WorkingWithDropDown
     {
+        ChromeOptions options;
         IWebDriver driver;
 
         [SetUp]
         public void SetUp()
         {
+            options = new ChromeOptions();
+            options.AddArguments("--headless");
             // Create object of ChromeDriver
             driver = new ChromeDriver();
 
