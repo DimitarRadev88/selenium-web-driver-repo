@@ -32,13 +32,13 @@ jobs:
       run: |
         echo "Running TestProcect1 tests"
         dotnet test TestProject1/TestProject1.csproj --verbosity normal
-    - name: Run TestProject1 tests
+    - name: Run TestProject2 tests
       env:
         CHROMEWEBDRIVER: /usr/bin/google-chrome
       run: |
         echo "Running TestProcect2 tests"
         dotnet test TestProject2/TestProject2.csproj --verbosity normal
-    - name: Run TestProject1 tests
+    - name: Run TestProject3 tests
       env:
         CHROMEWEBDRIVER: /usr/bin/google-chrome
       run: |
